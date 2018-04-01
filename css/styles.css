@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a, button, input, textarea, select {
+	outline: none;
+}
+a, button {
+	transition: .3s ease;
+}
+
+body{
+	font-size: 16px;
+	color: #000;
+	line-height: 1.2;
+	font-family: arial, sans-serif;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.container{
+	width: 1147px;
+	margin: 0 auto;
+}
+.header{
+	background: rgba(255,255,255, .8); 
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.menu{
+}
+.left_menu{
+	float: left;
+}
+.right_menu{
+	float: right;
+}
+.left_menu li{
+	display: inline-block;
+	padding-right: 55px;
+	padding-top: 32px;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 14px;
+	padding-bottom: 33px;
+}
+.left_menu a{
+	text-decoration: none;
+	color: #797979;
+}
+.right_menu button{
+	margin-top: 15px;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 14px;
+	border: 2px solid #ff3251;
+	border-radius: 40px;
+	background: rgba(255,255,255, .2);
+	padding: 15px 40px;
+	cursor: pointer;
+}
+.right_menu button:hover {
+	background-color: #ff3251;
+	color: #fff;
+}
+.link_pink a{
+	color: #ff3251;
+}
+.link_pink{
+	color: #ff3251;
+}
+.title_block{
+	position:relative;
+	z-index: 1;
+}
+.main_bg {
+	background-image: url(../img/Main-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 737px;
+}
+.main_bg:before{
+	content: '';
+	background: rgba(82, 82, 82, 0.48);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.main_bg:after {
+	content: '';
+	background-image: url(../img/arrow.png);
+	width: 30px;
+	height: 15px;
+	position: absolute;
+	z-index: 4;
+	left: 50%;
+	bottom: 23px;
+	transform: translateX(-50%);
+}
+
+.main_bg h1{
+	width: 760px;
+	font-size: 48px;
+	color: #fff;
+	font-family: 'Myriad Pro',sans-serif;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%,-50%);
+}
+
+.advantages{
+	background: #fff;
+}
+.top_text{
+	text-align: center;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 16px;
+	color: #797979;
+}
+.top_text .question{
+	font-size: 18px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+.top_text p{
+	padding-bottom: 15px;
+}
+.garanty_all{
+	text-align: center;
+}
+.garanty{
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding-top: 145px;
+	padding-bottom: 77px;
+}
+.garanty:last-child{
+}
+.garanty .description .description_pink{
+	color: #ff3251;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.garanty .description .description_grey{
+	color: #797979;
+	padding-bottom: 7px;
+	font-size: 14px;
+}
+.number_green:before{
+	content: '9435';
+	color: #00c7c0;
+}
+.katalog{
+	background: #f4f6f8;
+}
+.link_floor{
+	text-align: center;
+	margin-top: 25px;
+}
+.link_floor li{
+	text-align: center;
+	display: inline-block;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 16px;
+	margin: 0 15px;
+	width: 190px;
+	cursor: pointer;
+}
+.link_floor ul li a{
+	text-decoration: none;
+	color: #ff3251;
+	display: block;
+	padding: 15px 0;
+	border: 2px solid #ff3251;
+	border-radius: 40px;
+}
+.link_floor ul li a:hover{
+	background:#ff3251;
+	color: #fff;
+}
+.product{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.product-col {
+	width: 25%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.product_clock{
+	background: #fff;
+	margin: 45px 0;
+	text-align: center;
+	border-radius: 2%;
+}
+.product_clock img {
+	width: 100%;
+	height: auto;
+}
+.description_clock{
+}
+.description_clock p{
+	color: #ff3251;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 12px;
+	padding: 20px 40px 0 40px;
+}
+.description_clock p:last-child{
+	padding: 15px 40px 140px 40px;
+}
+.description_clock p span{
+	color: #000;
+}
+.all_gifts{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.all_gifts button{
+	background: #f4f6f8;
+	color: #ff3251;
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 16px;
+	border: 2px solid #ff3251;
+	border-radius: 40px;
+	padding: 15px 0;
+	width: 190px;
+	cursor: pointer;
+}
+.all_gifts button:hover{
+	background:#ff3251;
+	color: #fff;
+}
+.footer{
+	width: 100%;
+	background: #fff;
+	position: relative;
+}
+.contacts{
+	float: left;
+	width: 40%;
+	padding-bottom: 345px;
+}
+.contacts p{
+	font-family: 'Myriad Pro',sans-serif;
+	font-size: 14px;
+	color: #888788;
+	padding-top:10px;
+}
+.contacts p span{
+	color: #000;
+}
+.contacts p:first-child{
+	color: #ff3251;
+	font-size: 16px;
+	padding: 80px 0 18px 0;
+}
+.map{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+}
+.google-map {
+	height: 565px;
+	width: 100%;
+	border: 0;
+}
+@media screen and (max-width:1170px){
+.container{
+	width: 1000px;
+}
+.left_menu li {
+   padding-right:30px;
+}
+.right_menu button {
+   padding: 15px 20px;
+}
+.text_title h1{
+	font-size: 20px;
+}
+.left_menu {
+  padding-left: 15%;
+}
+.right_menu {
+  float: left;
+}
+.description_clock p:last-child {
+  padding: 15px 20px 60px 20px;
+}
+.main_bg h1 {
+  font-size: 40px;
+}
+.garanty .description .description_grey{
+  font-size: 12px;
+}
+.garanty {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.top_text {
+  font-size: 14px;
+}
+.google-map {
+	height: 300px;
+}
+.contacts {
+  padding-bottom: 0;
+}
+.description_clock p {
+    font-size: 10px;
+    padding: 20px 20px 0 20px;
+}
+}
+@media screen and (max-width:1020px){
+.container{
+	width: 900px;
+}
+.main_bg h1 {
+  font-size: 38px;
+}
+.left_menu {
+  padding-left: 7%;
+}
+.link_floor li {
+  font-size: 14px;
+  margin: 0 10px;
+}
+.all_gifts button {
+  font-size: 14px;
+}
+.garanty {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  float: none;
+  width: 100%;
+}
+.product-col {
+  float: none;
+  max-width: 230px;
+  margin: 0 auto;
+  width: 100%;
+}
+}
+@media screen and (max-width:925px){
+.container{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.left_menu {
+  padding-left: 10px;
+}
+.contacts {
+  padding-left: 40px;
+}
+.link_floor li {
+	width: 120px;
+  margin: 10px 10px;
+}
+}
+@media screen and (max-width:770px){
+.main_bg{
+	height: 300px;
+} 
+.main_bg h1{
+  display: none;
+}
+.header {
+	display: none;
+}
+.top_text .question {
+  font-size: 16px;
+}
+.top_text p{
+	padding-left: 15px;
+	padding-right: 15px; 
+}
+.top_text {
+  font-size: 10px;
+}
+.garanty .description .description_grey {
+  font-size: 10px;
+}
+.all_gifts button {
+  width: 130px;
+  font-size: 14px;
+}
+.contacts p:first-child {
+  padding: 40px 0 18px 0;
+}
+}
+@media screen and (max-width:460px){
+.description_clock p:last-child {
+  padding: 5px 5px 25px 5px;
+}
+.description_clock p {
+  padding: 5px;
+}
+}
